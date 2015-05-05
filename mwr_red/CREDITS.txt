@@ -1,0 +1,9 @@
+The MWR_Red theme is loosely derived from the 7dana-Clean theme. You can download the 7dana-Clean theme at the following link:
+
+http://www.7dana.com/download/pafiledb.php?action=file&id=21
+
+I have contacted 7dana regarding the modifications I have made. The modifications I have made have been reviewed and permission was granted to release the theme as my own work.
+
+This notice was not required by 7dana, but is a courtesy and a show of respect.
+
+If you would like to have a custom theme designed for your site, I strongly recommend visiting 7dana.com!

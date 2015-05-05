@@ -1,0 +1,132 @@
+<!-- A link back to MyWebResource is nice, but not required. -->
+<!-- Theme by http://mywebresource.com/ -->
+<!--End "Theme by" text -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<title><{$xoops_sitename}>-<{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favicon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+</script>
+</head>
+<body>
+<table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" id="okvir">
+  <tr>
+    <td><table width="100%" cellspacing="0">
+        <tr id="header">
+          <td id="headerlogo"><a href="<{$xoops_url}>/"><img src="<{$xoops_imageurl}>images/logo.jpg" alt="" border="0" /></a></td>
+          <td align="center" id="headerbanner"><{$xoops_banner}></td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0" width="100%" border="0" bgcolor="#990000">
+        <tr>
+          <td id="headmenu" align="center" valign="middle"> | <a class="menuHead" href="<{$xoops_url}>/index.php">Home</a> | <a class="menuHead" href="<{$xoops_url}>/modules/sitemap/">Sitemap</a> | <a class="menuHead" href="<{$xoops_url}>/modules/wflinks/">Links</a> | <a class="menuHead" href="<{$xoops_url}>/modules/wfdownloads/">Downloads</a> | <a class="menuHead" href="<{$xoops_url}>/modules/xhld0/">Headlines</a> | <a class="menuHead" href="<{$xoops_url}>/modules/xoopspoll/">Polls</a> | <a class="menuHead" href="<{$xoops_url}>/modules/xoopspartners/">Partners</a> | <a class="menuHead" href="<{$xoops_url}>/modules/liens/">Link to Us</a> | <a class="menuHead" href="<{$xoops_url}>/modules/liaise/">Contact</a> | </td>
+        </tr>
+      </table>
+      <table cellspacing="0" cellpadding="0" width="100%" border="0">
+        <tr>
+          <td id="headerborder"></td>
+        </tr>
+      </table>
+      <table border="0" cellpadding="0" cellspacing="0" id="glavna">
+        <tr>
+          <td id="leftcolumn"><!-- Start left blocks loop -->
+<{foreach item=block from=$xoops_lblocks}>
+            <div class="<{cycle values="blockTitle"}>"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div>
+            <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" /> <{/foreach}>
+            <!-- End left blocks loop -->
+            <br />
+            <br />
+          </td>
+          <td id="centercolumn" style="padding-left: 2px;"><div id="content"> <{$xoops_contents}></div>
+            <!-- Display center blocks if any -->
+<{if $xoops_showcblock == 1}>
+            <table class="sadrzaj" cellspacing="0">
+              <tr>
+                <td id="centerCcolumn" colspan="2"><!-- Start center-center blocks loop -->
+<{foreach item=block from=$xoops_ccblocks}>
+                  <table align="center" cellpadding="0" cellspacing="2">
+                    <tr>
+                      <td><div class="blockTitle"><{$block.title}></div>
+                        <div class="blockContent"><{$block.content}></div></td>
+                    </tr>
+                  </table>
+<{/foreach}>
+                  <!-- End center-center blocks loop -->
+                </td>
+              </tr>
+              <tr>
+                <td id="centerLcolumn"><!-- Start center-left blocks loop -->
+<{foreach item=block from=$xoops_clblocks}>
+                  <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                    <tr>
+                      <td><div class="blockTitle"><{$block.title}></div>
+                        <div class="blockContent"><{$block.content}></div></td>
+                    </tr>
+                  </table>
+<{/foreach}>
+                  <!-- End center-left blocks loop -->
+                </td>
+                <td id="centerRcolumn"><!-- Start center-right blocks loop -->
+<{foreach item=block from=$xoops_crblocks}>
+                  <table class="blok" align="center" cellpadding="3" cellspacing="2">
+                    <tr>
+                      <td><div class="blockTitle"><{$block.title}></div>
+                        <div class="blockContent"><{$block.content}></div></td>
+                    </tr>
+                  </table>
+<{/foreach}>
+                  <!-- End center-right blocks loop -->
+                </td>
+              </tr>
+            </table>
+<{/if}>
+            <!-- End display center blocks -->
+          </td>
+<{if $xoops_showrblock == 1}>
+          <td id="rightcolumn"><!-- Start right blocks loop -->
+<{foreach item=block from=$xoops_rblocks}>
+            <div class="<{cycle values="blockTitle,blockTitle"}>"><{$block.title}></div>
+            <div class="blockContent"><{$block.content}></div>
+            <img src="<{$xoops_imageurl}>images/160.gif" width="160" height="1" alt="" /> <{/foreach}>
+            <!-- End right blocks loop -->
+            <br />
+            <br />
+          </td>
+<{/if}> </tr>
+        <tr>
+          <td colspan="3"></td>
+        </tr>
+      </table></td>
+  </tr>
+</table>
+<table width="758"  border="0" align="center" cellpadding="0" cellspacing="0" class="dole">
+  <tr>
+    <td><div class="privatnost"><br />
+<{$xoops_footer}><br />
+<!-- A link back to MyWebResource is nice, but not required. -->
+Theme by <a href="http://mywebresource.com/" target="_blank">MyWebResource</a><br />
+<!--End "Theme by" text -->
+</div></td>
+  </tr>
+</table>
+<br />
+</body>
+</html>
